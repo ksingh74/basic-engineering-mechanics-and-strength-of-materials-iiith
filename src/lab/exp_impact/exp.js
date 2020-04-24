@@ -1,15 +1,16 @@
 var stand,arm,scale,stage,box;
+var flag=0;
 function startAnimation() 
 {
     animationArea.start();
-    stand= new sq_component(950,250,100,300,"#FF0000");
-    arm= new sq_component(1000,240,240,20,"#FFF000");
-    scale= new arc_component(1000,250,50,Math.PI,0,"#555000");
-    stage= new sq_component(950,500,100,50,"#555000");
-    box= new sq_component(985,470,30,30,"#888000");
-    tip=new sq_component(1240,240,20,40,"#FFF000");
-    needle=new sq_component(1000,249,-40,2,"#FFF000");
-    hinge=new arc_component(1000,250,10,0,2*Math.PI,"#000000");
+    stand= new sq_component(850,250,100,300,"#FF0000");
+    arm= new sq_component(900,240,240,20,"#FFF000");
+    scale= new arc_component(900,250,50,Math.PI,0,"#555000");
+    stage= new sq_component(850,500,100,50,"#555000");
+    box= new sq_component(885,470,30,30,"#888000");
+    tip=new sq_component(1140,240,20,40,"#FFF000");
+    needle=new sq_component(900,249,-40,2,"#FFF000");
+    hinge=new arc_component(900,250,10,0,2*Math.PI,"#000000");
 }
 var animationArea = {
     canvas : document.createElement("canvas"),
@@ -110,20 +111,23 @@ function updateFrame()
     stand.update(0); 
     scale.update(0);
     stage.update(0);
-    if(rotate_arm===1)
+    if(flag===1)
     {
-        arm.angle+=1*Math.PI/180;
-    }
-    if(rotate_needle===2)
-    {
-        needle.angle+=1*Math.PI/180;
-    }
-    if(arm.angle>80*Math.PI/180 && box.x>725)
-    {
-        box.x-=5;
-        if(box.x<865 && box.y<525)
+        if(rotate_arm===1)
         {
-            box.y+=2;
+            arm.angle+=1*Math.PI/180;
+        }
+        if(rotate_needle===2)
+        {
+            needle.angle+=1*Math.PI/180;
+        }
+        if(arm.angle>80*Math.PI/180 && box.x>725)
+        {
+            box.x-=5;
+            if(box.x<865 && box.y<525)
+            {
+                box.y+=2;
+            }
         }
     }
     box.update(0);
@@ -131,4 +135,25 @@ function updateFrame()
     arm.update(rotate_arm);
     hinge.update(0);
     // tip.update(rotate_tip);
+}
+
+function start_stop() 
+{
+  if(flag===0)
+  {
+    var temp=document.getElementById("bt2");
+    temp.innerHTML="Stop";
+    flag=1;
+  }
+  else if(flag===1)
+  {
+    var temp=document.getElementById("bt2");
+    temp.innerHTML="Start";
+    flag=0;
+  }
+}
+
+function restart()
+{
+  location.reload();
 }

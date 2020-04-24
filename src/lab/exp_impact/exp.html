@@ -5,12 +5,12 @@
 	<link rel="stylesheet" href="exp.css">
  
 </head>
-<body>
+<body onload="startAnimation()">
   <div id="chartContainer" style="height: 500px; width:500px;"></div>
 	<div class="container" id="con">
   <img id="im1" src="images/blue.png">
-  <button id="bt1" onclick="startAnimation()">Restart</button>
-  <button id="bt2" onclick="startAnimation()">Start</button>	
+  <button id="bt1" onclick="restart()">Restart</button>
+  <button id="bt2" onclick="start_stop()">Start</button>	
   <img id="im2" src="images/restart.png">
   <img id="im3" src="images/start.png">
 	</div>
