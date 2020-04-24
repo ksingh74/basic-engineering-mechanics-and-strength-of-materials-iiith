@@ -43,3 +43,12 @@ var j=0;
   	
   }
 }
+function myfun2()
+{
+	 var x = document.getElementById("chartContainer");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
