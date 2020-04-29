@@ -1,7 +1,7 @@
 #con {
   position: absolute;
   width: 500px;
-  left: 700px;
+  left: 400px;
   top: 50px;
   height:50px;
 }
@@ -14,7 +14,7 @@
   padding: 50px;
   margin: 20px;
   top:650px;
-  left:450px;
+  left:150px;
 }
 #bt1 {
   position: absolute;
@@ -75,7 +75,7 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:400px;
+  left:100px;
   top:30px;
   background-color: #555;
 }
@@ -83,7 +83,7 @@
   position:absolute;
   height: 625px;
   width: 10px;
-  left:1030px;
+  left:730px;
   top:30px;
   background-color: #555;
 }
@@ -91,7 +91,7 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:1600px;
+  left:1300px;
   top:30px;
   background-color: #555;
 }
@@ -99,7 +99,7 @@
   position:absolute;
   height: 10px;
   width: 1200px;
-  left:400px;
+  left:100px;
   top:30px;
   background-color: #555;
 }
@@ -107,7 +107,7 @@
   position:absolute;
   height: 10px;
   width: 1200px;
-  left:400px;
+  left:100px;
   top:645px;
   background-color: #555;
 }
@@ -115,7 +115,7 @@
   position:absolute;
   height: 10px;
   width: 1200px;
-  left:400px;
+  left:100px;
   top:920px;
   background-color: #555;
 }
@@ -123,7 +123,7 @@
 { 
   position: absolute;
   top:140px;
-  left:910px;
+  left:610px;
   height: 50px;
   width: 130px;
   background-color: lightgrey;
@@ -131,7 +131,7 @@
 #rup2
 {position: absolute;
   top:190px;
-  left:945px;
+  left:645px;
   height: 100px;
   width: 60px;
   background-color: lightgrey;
@@ -140,7 +140,7 @@
 {
   position: absolute;
   top:410px;
-  left:924px;
+  left:624px;
   height: 50px;
   width: 100px;
   background-color: lightgrey;
@@ -148,7 +148,7 @@
 #rbot2
 {position: absolute;
   top:460px;
-  left:950px;
+  left:650px;
   height: 100px;
   width: 50px;
   background-color: lightgrey;
@@ -156,7 +156,7 @@
 #rbot3
 { position: absolute;
   top:560px;
-  left:875px;
+  left:575px;
   height: 50px;
   width: 200px;
   background-color: black;
@@ -167,7 +167,7 @@
   width: 8px;
   height: 0;
   top:225px;
-  left:946px;
+  left:646px;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-top: 60px solid black;
@@ -175,7 +175,7 @@
 #imp
 {position: absolute;
   top:340px;
-  left:875px;
+  left:575px;
   height: 70px;
   width: 200px;
   background-color: darkgrey;
@@ -184,7 +184,7 @@
 #mp{
   position: absolute;
   top:800px;
-  left:540px;
+  left:240px;
   font-size: 55px;
 }
 #p1{
