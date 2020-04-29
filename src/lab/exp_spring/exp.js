@@ -20,7 +20,7 @@ var animationArea = {
       this.canvas.width=500;
       this.canvas.height=500;
       this.canvas.style.position="absolute";
-      this.canvas.style.left="750px"
+      this.canvas.style.left="450px"
       this.canvas.style.top="150px"
       this.context = this.canvas.getContext("2d");
       document.body.insertBefore(this.canvas,document.body.childNodes[0]);
