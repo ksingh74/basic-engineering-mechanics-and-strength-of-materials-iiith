@@ -17,9 +17,9 @@ function frame13()
 		}
 	else if(ui==22)
 		{
-			document.getElementById("ltrapeze").style.left=651 + 'px';
-			document.getElementById("rtriangle").style.left=718 + 'px';
-			document.getElementById("rrec").style.left=743 + 'px';
+			document.getElementById("ltrapeze").style.left=351 + 'px';
+			document.getElementById("rtriangle").style.left=418 + 'px';
+			document.getElementById("rrec").style.left=443 + 'px';
 		}
 }
 var i=0;
@@ -82,16 +82,14 @@ function myfun1()
 	var elem5=document.getElementById("rrec");
 	var pos1=140;
 	var pos2=250;
-	var pos3=651;//655
-	var pos4=718;//714
-	var pos5=743;//739
+	var pos3=351;//655
+	var pos4=418;//714
+	var pos5=443;//739
 	var id1 = setInterval(frame1, 100);
 	var id2 = setInterval(frame2, 100);
 	
 	function frame1() {
-    elem3.style.left= 655 + 'px';
-	elem4.style.left=714 + 'px';
-	elem5.style.left=739 + 'px';
+ 
     if (pos1 == 190) {
       clearInterval(id1);
     } else {
@@ -99,10 +97,7 @@ function myfun1()
       elem1.style.top = pos1 + 'px'; 
     }
   }
-  function frame2() {
-	elem3.style.left= 655 + 'px';
-	elem4.style.left=714 + 'px';
-	elem5.style.left=739 + 'px';    
+  function frame2() {   
     if (pos2 == 300) {
       clearInterval(id2);
     	//frame3();

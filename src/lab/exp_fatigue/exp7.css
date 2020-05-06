@@ -1,7 +1,7 @@
 #con {
   position: absolute;
   width: 500px;
-  left: 450px;
+  left: 150px;
   top: 50px;
   height:50px;
 }
@@ -14,7 +14,7 @@
   padding: 50px;
   margin: 20px;
   top:650px;
-  left:450px;
+  left:150px;
 }
 #bt1 {
   position: absolute;
@@ -88,7 +88,7 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:400px;
+  left:100px;
   top:30px;
   background-color: #555;
 }
@@ -96,7 +96,7 @@
   position:absolute;
   height: 625px;
   width: 10px;
-  left:1030px;
+  left:730px;
   top:30px;
   background-color: #555;
 }
@@ -104,7 +104,7 @@
   position:absolute;
   height: 900px;
   width: 10px;
-  left:1600px;
+  left:1300px;
   top:30px;
   background-color: #555;
 }
@@ -112,7 +112,7 @@
   position:absolute;
   height: 10px;
   width: 1200px;
-  left:400px;
+  left:100px;
   top:30px;
   background-color: #555;
 }
@@ -120,7 +120,7 @@
   position:absolute;
   height: 10px;
   width: 1200px;
-  left:400px;
+  left:100px;
   top:645px;
   background-color: #555;
 }
@@ -128,21 +128,21 @@
   position:absolute;
   height: 10px;
   width: 1200px;
-  left:400px;
+  left:100px;
   top:920px;
   background-color: #555;
 }
 #mp{
   position: absolute;
   top:800px;
-  left:600px;
+  left:300px;
   font-size: 55px;
 }
 #abox{
   position: absolute;
   height: 80px;
   width:320px ;
-  left: 580px;
+  left: 280px;
   top: 120px;
   background-color: lightgrey;
 }
@@ -150,7 +150,7 @@
   position: absolute;
   height:80px;
   width:320px ;
-  left: 580px;
+  left: 280px;
   top:270px ;
   background-color: grey;
 }
@@ -158,7 +158,7 @@
   position: absolute;
   height:30px;
   width:80px ;
-  left:700px;
+  left:400px;
   top:350px ;
   background-color: #555;
 }
@@ -167,7 +167,7 @@
   position: absolute;
   height:100px;
   width:250px ;
-  left:615px;
+  left:315px;
   top:530px ;
   background-color: grey;
 }
@@ -175,7 +175,7 @@
   position: absolute;
   height:70px;
   width:10px ;
-  left:600px;
+  left:300px;
   top:200px ;
   background-color: darkblue;
 }
@@ -183,31 +183,23 @@
   position: absolute;
   height:70px;
   width: 10px;
-  left: 870px;
+  left: 570px;
   top: 200px;
   background-color: darkblue;
-}
-#xline{
-  position: absolute;
-  height:;
-  width: ;
-  left:;
-  top: ;
-  background-color: ;
 }
 #mobj{
   position: absolute;
   height:250px;
   width:50px ;
-  left:715px;
+  left:415px;
   top:280px ;
   background-color: black;
 }
 #lptn{
   position: absolute;
-  left:640px;
+  left:340px;
   top:390px;
-height: 65px;
+  height: 65px;
   width: 55px;
   background-color: white;
   border-radius: 50%;
@@ -215,9 +207,9 @@ height: 65px;
 }
 #rptn{
   position: absolute;
-  left:785px;
+  left:485px;
   top:390px;
-height: 65px;
+  height: 65px;
   width: 55px;
   background-color: white;
   border-radius: 50%;
@@ -227,13 +219,13 @@ height: 65px;
   position: absolute;
   height:500px;
   width:500px;
-  left:1050px;
+  left:750px;
   top:125px;
 }
 #para{
   position: absolute;
   top:140px;
-  left:725px;
+  left:425px;
 }
 #stress{
   position: absolute;

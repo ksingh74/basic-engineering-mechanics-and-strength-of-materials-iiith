@@ -3,21 +3,24 @@ var flag=0;
 function startAnimation() 
 {
     animationArea.start();
-    stand= new sq_component(850,250,100,300,"#FF0000");
-    arm= new sq_component(900,240,240,20,"#FFF000");
-    scale= new arc_component(900,250,50,Math.PI,0,"#555000");
-    stage= new sq_component(850,500,100,50,"#555000");
-    box= new sq_component(885,470,30,30,"#888000");
-    tip=new sq_component(1140,240,20,40,"#FFF000");
-    needle=new sq_component(900,249,-40,2,"#FFF000");
-    hinge=new arc_component(900,250,10,0,2*Math.PI,"#000000");
+    stand= new sq_component(700,250,100,300,"#FF0000");
+    arm= new sq_component(750,240,240,20,"#FFF000");
+    scale= new arc_component(750,250,50,Math.PI,0,"#555000");
+    stage= new sq_component(700,500,100,50,"#555000");
+    box= new sq_component(735,470,30,30,"#888000");
+    tip=new sq_component(840,240,20,40,"#FFF000");
+    needle=new sq_component(750,249,-40,2,"#FFF000");
+    hinge=new arc_component(750,250,10,0,2*Math.PI,"#000000");
 }
 var animationArea = {
     canvas : document.createElement("canvas"),
     start : function() 
     {
-        this.canvas.width=2000;
-        this.canvas.height=2000;
+        this.canvas.width=1000;
+        this.canvas.height=800;
+        this.canvas.style.position="absolute";
+         this.canvas.style.left="-350px";
+      this.canvas.style.top="50px";
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas,document.body.childNodes[0]);
         this.interval=setInterval(updateFrame,16);
@@ -121,7 +124,7 @@ function updateFrame()
         {
             needle.angle+=1*Math.PI/180;
         }
-        if(arm.angle>80*Math.PI/180 && box.x>725)
+        if(arm.angle>80*Math.PI/180 && box.x>625)
         {
             box.x-=5;
             if(box.x<865 && box.y<525)
