@@ -164,8 +164,8 @@ function increase()
     spring.numRounds+=1;
   }
   else if(edit[1].checked)
-  {
-    spring.lineWidth+=1;
+  { if(spring.lineWidth<30)
+    {spring.lineWidth+=1;}
   }
   else if(edit[2].checked)
   {
