@@ -45,12 +45,12 @@ var updateChart = function () {
       if (dps.length > 100) {
             dps.shift();
       }
-
-      chart.render();
-      j++;
+      if(j<15)
+      {chart.render();
+      j++;}
 };
 
-updateChart();
+//updateChart();
 setInterval(function(){updateChart()}, updateInterval);
 
 }

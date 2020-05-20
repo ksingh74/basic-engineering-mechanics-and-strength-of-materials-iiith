@@ -4,7 +4,7 @@
 	<script src="exp2.js"></script>
 	<link rel="stylesheet" href="exp2.css">
  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  <script>
+  <script> 
 function graph() {
 
 var dps = []; // dataPoints
@@ -45,14 +45,13 @@ var updateChart = function () {
       if (dps.length > 100) {
             dps.shift();
       }
-
-      chart.render();
-      j++;
+      if(j<23)
+      {chart.render();
+      j++;}
 };
 
-updateChart();
+//updateChart();
 setInterval(function(){updateChart()}, updateInterval);
-
 }
 </script>
 </head>

@@ -45,9 +45,9 @@ var updateChart = function () {
       if (dps.length > 100) {
             dps.shift();
       }
-
-      chart.render();
-      j++;
+      if(j<19)
+      {chart.render();
+      j++;}
 };
 
 updateChart();
